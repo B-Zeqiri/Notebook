@@ -3,26 +3,31 @@ import { nanoid } from 'nanoid';
 import NotesList from './components/NotesList';
 import Search from './components/Search';
 
+
 const App = () => {
 	const [notes, setNotes] = useState([
 		{
 			id: nanoid(),
 			text: 'This is my first note!',
+			tag: 'first',
 			date: '15/04/2021',
 		},
 		{
 			id: nanoid(),
 			text: 'This is my second note!',
+			tag: 'second',
 			date: '21/04/2021',
 		},
 		{
 			id: nanoid(),
 			text: 'This is my third note!',
+			tag: 'third',
 			date: '28/04/2021',
 		},
 		{
 			id: nanoid(),
 			text: 'This is my new note!',
+			tag: 'fourth',
 			date: '30/04/2021',
 		},
 	]);
@@ -45,12 +50,12 @@ const App = () => {
 			JSON.stringify(notes)
 		);
 	}, [notes]);
-
-	const addNote = (text) => {
+	const addNote = (text, tag) => {
 		const date = new Date();
 		const newNote = {
 			id: nanoid(),
 			text: text,
+			tag: tag,
 			date: date.toLocaleDateString(),
 		};
 		const newNotes = [...notes, newNote];
@@ -61,7 +66,6 @@ const App = () => {
 		const newNotes = notes.filter((note) => note.id !== id);
 		setNotes(newNotes);
 	};
-
 	return (
 			<div className='container'>
 				<h1>Notes</h1>

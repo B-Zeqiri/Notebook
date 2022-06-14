@@ -31,17 +31,24 @@ code {
 }
 
 .note.new {
-	background-color: #67d7cc;
+	background-color: #c9c9c9;
 }
 
 textarea {
 	border: none;
 	resize: none;
-	background-color: #67d7cc;
+	background-color: #c9c9c9;
 }
 
 textarea:focus {
 	outline: none;
+}
+
+.tag{
+	background-color: rgb(224, 224, 224);
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 10px;
 }
 
 .save {
@@ -57,7 +64,7 @@ textarea:focus {
 }
 
 .note {
-	background-color: #fef68a;
+	background-color: #beb96c;
 	border-radius: 10px;
 	padding: 1rem;
 	min-height: 170px;
@@ -94,4 +101,9 @@ textarea:focus {
 
 .search input:focus {
 	outline: none;
+}
+.tag{
+	padding: 5px;
+	margin-bottom: 5px;
+	height: 20px;
 }
