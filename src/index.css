@@ -55,7 +55,7 @@ textarea:focus {
 	background-color: #e1e1e1;
 	border: none;
 	border-radius: 15px;
-	padding: 5px 10px 5px 10px;
+	padding: 6px 12px 6px 12px;
 }
 
 .save:hover {
@@ -72,6 +72,7 @@ textarea:focus {
 	flex-direction: column;
 	justify-content: space-between;
 	white-space: pre-wrap;
+	transition: all 0.5s;
 }
 
 .note-footer {
@@ -106,4 +107,15 @@ textarea:focus {
 	padding: 5px;
 	margin-bottom: 5px;
 	height: 20px;
+}
+
+.ct{
+	display: flex;
+	flex-direction: column;
+	background-color: #c2bd8d;
+	padding: 3px 8px 2px 8px;
+	border-radius: 4px;
+}
+.note:hover{
+	border-radius: 25px;
 }

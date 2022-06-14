@@ -5,7 +5,10 @@ const Note = ({ id, text, tag, date, handleDeleteNote }) => {
 		<div className='note'>
 			<span>{text}</span>
         <div className='note-footer'>
-		        <span>{tag}</span>
+			       <div className='ct'>
+			       <span><b>Category:</b></span>
+		           <span>{tag}</span>
+				   </div>
 				<small>{date}</small>
 				<MdDeleteForever
 					onClick={() => handleDeleteNote(id)}
